@@ -3,7 +3,7 @@ S.NO,Country_code,Country,Continental_region,No._OF_Internet_Plans,Average_price
 1,KG,Kyrgyzstan,Asia,20,0.15,0.1,7.08,0.21,0.27,2309235,6304030,16.3
 2,FJ,Fiji,Oceania,18,0.19,0.05,0.85,0.59,3.57,452479,883483,25.99
 3,IT,Italy,Europe,29,0.27,0.09,3.54,0.43,1.73,50540000,60627291,37.15
-4,SD,S. Sudan,Africa,33,0.27,0.03,0.92,0.63,0.68,12512639,41801533,9.5
+4,SD,Sudan,Africa,33,0.27,0.03,0.92,0.63,0.68,12512639,41801533,9.5
 5,RU,Russia,Asia,22,0.29,0.13,1.86,0.52,0.91,124000000,145734038,20.46
 6,MD,Moldova,Europe,18,0.32,0.07,2.79,1.12,2.82,3083783,4051944,29.46
 7,BD,Bangladesh,Asia,60,0.34,0.11,2.22,0.7,0.99,129180000,166303498,10.43
@@ -124,7 +124,7 @@ S.NO,Country_code,Country,Continental_region,No._OF_Internet_Plans,Average_price
 122,CR,Costa Rica,North America,15,2.36,1.6,2.94,2.74,4.89,3511549,4999441,17.46
 123,BL,Saint Barthélemy (St. Barts),North America,17,2.36,0.59,106.49,4.06,5.04,,,
 124,AR,Argentina,South America,28,2.38,0.44,11.47,1.45,7.4,33561876,44361150,20.64
-125,BA,Bosnia and Herzegovina,Europe,24,2.39,0.63,21.26,3.04,3.05,2320000,3323925,28.49
+125,BA,Bosnia and Herz.,Europe,24,2.39,0.63,21.26,3.04,3.05,2320000,3323925,28.49
 126,VC,Saint Vincent and the Grenadines,North America,13,2.41,1.48,3.33,3.33,3.58,72048,110211,
 127,GD,Grenada,North America,13,2.44,1.84,4.44,5.37,12,63692,111454,
 128,PY,Paraguay,South America,27,2.53,0.73,9.12,2.3,11.56,4160340,6956066,15.15
