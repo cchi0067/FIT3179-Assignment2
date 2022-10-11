@@ -141,7 +141,7 @@ S.NO,Country_code,Country,Continental_region,No._OF_Internet_Plans,Average_price
 139,MZ,Mozambique,Africa,19,2.79,0.19,6.98,3.33,12.82,6162217,29496004,15.66
 140,AL,Albania,Europe,32,2.8,0.72,96.39,2.83,5.28,2105339,2882740,40.48
 141,CO,Colombia,South_America,60,2.8,0.42,9.88,3.46,3.22,30548252,49661048,12.35
-142,CG,Congo,Africa,8,2.88,1,7.64,1.94,4.57,455055,5244359,
+142,CG,Dem._Rep._Congo,Africa,8,2.88,1,7.64,1.94,4.57,455055,5244359,
 143,BZ,Belize,North_America,27,2.97,1.48,6.82,3.25,4.39,176400,383071,
 144,LU,Luxembourg,Europe,20,3,1.42,7.1,3.89,13.95,570794,604245,82.85
 145,LI,Liechtenstein,Europe,17,3.1,0.19,24.06,4.01,7.99,37201,37910,
@@ -152,7 +152,7 @@ S.NO,Country_code,Country,Continental_region,No._OF_Internet_Plans,Average_price
 150,MV,Maldives,Asia,23,3.24,1.85,12.95,3.88,5.79,275717,515696,47.93
 151,SL,Sierra_Leone,Africa,21,3.26,2.17,4.4,3.69,9.22,1000575,7650150,
 152,ML,Mali,Africa,42,3.28,1.2,169.79,4.12,12.37,2358540,19077749,
-153,US,United_States,North_America,45,3.33,1,30,8,8.34,312320000,327096265,61.12
+153,US,United_States_of_America,North_America,45,3.33,1,30,8,8.34,312320000,327096265,61.12
 154,DE,Germany,Europe,60,3.38,0.35,11.83,4.06,6.96,77794405,83124418,55.7
 155,JP,Japan,Asia,35,3.38,0.88,45.53,3.91,10.4,117400000,127202192,44.05
 156,MF,SaintMartin_(France),North_America,40,3.46,0.59,106.49,3.32,8.46,,,
