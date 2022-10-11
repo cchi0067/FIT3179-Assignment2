@@ -3,7 +3,7 @@ S.NO,Country_code,Country,Continental_region,No._OF_Internet_Plans,Average_price
 1,KG,Kyrgyzstan,Asia,20,0.15,0.1,7.08,0.21,0.27,2309235,6304030,16.3
 2,FJ,Fiji,Oceania,18,0.19,0.05,0.85,0.59,3.57,452479,883483,25.99
 3,IT,Italy,Europe,29,0.27,0.09,3.54,0.43,1.73,50540000,60627291,37.15
-4,SD,Sudan,Africa,33,0.27,0.03,0.92,0.63,0.68,12512639,41801533,9.5
+4,SD,S. Sudan,Africa,33,0.27,0.03,0.92,0.63,0.68,12512639,41801533,9.5
 5,RU,Russia,Asia,22,0.29,0.13,1.86,0.52,0.91,124000000,145734038,20.46
 6,MD,Moldova,Europe,18,0.32,0.07,2.79,1.12,2.82,3083783,4051944,29.46
 7,BD,Bangladesh,Asia,60,0.34,0.11,2.22,0.7,0.99,129180000,166303498,10.43
@@ -82,7 +82,7 @@ S.NO,Country_code,Country,Continental_region,No._OF_Internet_Plans,Average_price
 80,GG,Guernsey,Europe,14,1.46,0.16,54.84,1.24,3.05,,,
 81,SA,Saudi Arabia,Asia,60,1.47,0.33,13.33,2.12,5.62,27048861,33702756,102.79
 82,UY,Uruguay,South America,35,1.51,0.1,6.33,1.58,2.8,2360269,3449285,34.43
-83,DO,Dominican Republic,North America,22,1.51,0.33,18.17,0.74,1.28,6997472,10627141,20.7
+83,DO,Dominican Rep.,North America,22,1.51,0.33,18.17,0.74,1.28,6997472,10627141,20.7
 84,IR,Iran,Asia,52,1.52,0.22,6.21,0.75,1.88,78086663,81800188,24.9
 85,UG,Uganda,Africa,60,1.56,0.45,22.71,1.62,5.02,10162807,42729036,15.99
 86,HN,Honduras,North America,22,1.56,0.69,50,3.12,4.69,2977793,9587522,20.73
@@ -214,7 +214,7 @@ S.NO,Country_code,Country,Continental_region,No._OF_Internet_Plans,Average_price
 213,GR,Greece,Europe,22,8.16,1.06,768.87,12.06,4.91,7923438,10522246,59.42
 214,SC,Seychelles,Africa,21,8.64,2.36,22.67,11.43,19.55,55677,97096,
 215,CY,Cyprus,Asia,22,8.84,2.06,59.1,13.56,20.25,952369,1189265,75.48
-216,CF,Central African Republic,Africa,13,9.03,3.01,60.21,8.25,6.03,202204,4666368,
+216,CF,Central African Rep.,Africa,13,9.03,3.01,60.21,8.25,6.03,202204,4666368,
 217,VG,Virgin Islands (British),North America,32,9.54,3.38,29.9,12.5,18.55,,,
 218,KI,Kiribati,Oceania,28,9.94,2.35,22.87,10.5,11.05,16971,115847,
 219,BQ,North America Netherlands,North America,13,10.94,6.25,24,9.95,9.57,,,
