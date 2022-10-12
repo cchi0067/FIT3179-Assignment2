@@ -174,7 +174,6 @@ id,Country_code,Country,Continental_region,No_of_Internet_Plans,Average_price_of
 172,GW,GuineaBissau,Africa,9,4.41,2.25,36.12,4.12,11.71,73148,1874303,
 173,AG,Antigua and Barbuda,North America,39,4.44,1.48,42.18,7.17,12.7,77529,96286,
 174,AW,Aruba (Netherlands),North America,17,4.44,0.74,8.96,9.11,5.56,15877494,17059560,108.33
-175,AW,Aruba (Netherlands),North America,17,4.44,0.74,8.96,9.11,5.56,102285,105845,108.33
 176,PA,Panama,North America,8,4.49,2,7.48,6.69,4.69,2371852,4176869,17.03
 177,BF,Burkina Faso,Africa,31,4.52,2.35,18.06,2.47,10.26,3047909,19751466,
 178,SJ,Svalbard and Jan Mayen,Europe,13,4.65,0.58,29.03,5.9,11.76,,,
