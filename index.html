@@ -1,0 +1,92 @@
+<!-- <div id="chart"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="js/radial_bar.js"></script> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+  
+</head>
+<body>
+
+<div class="page" style="padding: 65px; background-color: #252525; background-image: linear-gradient(#252525, #2b1e3b);">
+
+
+        <h1 style="color: white; align-items: center; display: flex; justify-content: center;" >Internet around the World</h1>
+
+        <h2 style="color: white; align-items: center; display: flex; justify-content: center; background-color: rgb(67, 67, 67); padding: 10px;" >Number of Internet Users around the World</h2>
+
+
+        <div class="pure-u-1-3" style=" display: flex;">
+            <div id="vis1" class="vis-container" style="left: 40%; align-items: center; justify-content: center;"></div>
+        </div>
+
+        <h2 style="color: white; align-items: center; display: flex; justify-content: center; background-color: rgb(67, 67, 67); padding: 10px;" >Number of Internet Plans per Continent</h2>
+        <div class="pure-g">
+            <div class="pure-u-1-3" style="margin-top: 0%; ">
+                <div id="vis3" class="vis-container" style="left: 100%; align-items: center; justify-content: center;"></div>
+            </div>
+
+            <!-- <div class="description-right" style="margin-top: 0%; left: 60% ">
+                <p> hello my name</p>
+            </div> -->
+        </div>
+
+        <h2 style="color: white; align-items: center; display: flex; justify-content: center; background-color: rgb(67, 67, 67); padding: 10px;" >Does Internet Speed increase with Price?</h2>
+
+        <div class="pure-u-1-3" style="margin-top: 0%;">
+            <div id="vis2" class="vis-container" style="left: 100%; "></div>
+          </div>
+
+        <h2 style="color: white; align-items: center; display: flex; justify-content: center; background-color: rgb(67, 67, 67); padding: 10px;" >Top 5 Countries with the Fastest Internet Speed</h2>
+
+        <div class="pure-u-1-3" style="margin-left: 5%; ">
+            <div id="vis4" class="vis-container" style="left: 40%; align-items: center; justify-content: center;" ></div>
+        </div>
+
+</div>
+
+<script type="text/javascript">
+  var spec1 = "js/choropleth_map.vg.json";
+  vegaEmbed('#vis1', spec1).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec2 = "js/scatter_plot.vg.json";
+  vegaEmbed('#vis2', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec3 = "js/donut.vg.json";
+  vegaEmbed('#vis3', spec3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec4 = "js/bar_chart.vg.json";
+  vegaEmbed('#vis4', spec4).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+</body>
+</html>
