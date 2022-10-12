@@ -1,0 +1,104 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
+        "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif", "titleColor": "#f2f0f7", "labelColor": "#f2f0f7"},
+        "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif", "titleColor": "#f2f0f7", "labelColor": "#f2f0f7"},
+        "header": {"labelFont": "monospace", "titleFont": "monospace", "titleColor": "#f2f0f7", "labelColor": "#f2f0f7"},
+        "mark": {"font": "monospace"},
+        "title": {"font": "monospace", "subtitleFont": "monospace", "color": "#f2f0f7", "anchor": "start", "fontWeight": "bold", "fontSize": {"expr": "20"}, "subtitlePadding": {"expr": "10"}}
+      },
+        "padding": {"left": 20, "top": 20, "right": 20, "bottom": 20},
+    
+        "width": 300,
+        "height": 300,
+        "background": "#252525",
+    "data": {
+      "url": "https://raw.githubusercontent.com/cchi0067/FIT3179-Assignment2/main/data/world_internet_data.csv"
+    },
+    "transform": [
+        {"filter": "datum['Avg_Speed(Mbit/s)'] != 0"},
+        {"filter": "datum['Average_price_of_1GB_(USD)'] != 0"},
+        {"filter": "datum['Average_price_of_1GB_(USD)'] <= 15"}
+      ],
+    "layer": [
+      {
+        "mark": {
+          "type": "point",
+          "filled": true
+        },
+        "encoding": {
+          "x": {
+            "field": "Average_price_of_1GB_(USD)",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "Avg_Speed(Mbit/s)",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "Continental_region",
+            "type": "nominal",
+            "scale": {"range": [
+                "#542788",
+                "#998ec3",
+                "#d8daeb",
+                "#fee0b6",
+                "#f1a340",
+                "#b35806"]}
+          },
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"},
+            {"field": "Continental_region", "type": "nominal", "title": "Continent"},
+            {"field": "Average_price_of_1GB_(USD)", "type": "quantitative", "format": ".2f", "title": "Average price of 1GB (USD)"},
+            {"field": "Avg_Speed(Mbit/s)", "type": "quantitative", "format": ".2f", "title": "Average Internet Speed (Megabits per Second)"}
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "line",
+          "color": "firebrick"
+        },
+        "transform": [
+          {
+            "regression": "Avg_Speed(Mbit/s)",
+            "on": "Average_price_of_1GB_(USD)",
+            "method": "linear"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "title": "Average price of 1GB (USD)",
+            "field": "Average_price_of_1GB_(USD)",
+            "type": "quantitative"
+          },
+          "y": {
+            "title": "Average Internet Speed (Megabits per Second)",
+            "field": "Avg_Speed(Mbit/s)",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "transform": [
+          {
+            "regression": "Avg_Speed(Mbit/s)",
+            "on": "Average_price_of_1GB_(USD)",
+            "method": "linear",
+            "params": true
+          },
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "firebrick",
+          "x": "width",
+          "align": "right",
+          "y": -5
+        },
+        "encoding": {
+          "text": {"type": "nominal", "field": "R2"}
+        }
+      }
+    ]
+  }
