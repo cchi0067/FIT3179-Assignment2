@@ -11,7 +11,7 @@
     
         "width": 360,
         "height": 400,
-        "background": "null",
+        "background": null,
     "data": {
         "url": "https://raw.githubusercontent.com/cchi0067/FIT3179-Assignment2/main/data/world_internet_data_donut.csv"
     },
