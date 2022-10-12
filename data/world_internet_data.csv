@@ -1,4 +1,4 @@
-S.NO,Country_code,Country,Continental_region,No._OF_Internet_Plans,Average_price_of_1GB_(USD),Cheapest_1GB_for_30_days_(USD),Most_expensive_1GB_(USD),Average_price_of_1GB_(USD__at_the_start_of_2021),Average_price_of_1GB_(USD_at_start_of_2020),Internet_users,Population,Avg_Speed(Mbit/s)
+S.NO,Country_code,Country,Continental_region,No_of_Internet_Plans,Average_price_of_1GB_(USD),Cheapest_1GB_for_30_days_(USD),Most_expensive_1GB_(USD),Average_price_of_1GB_(USD__at_the_start_of_2021),Average_price_of_1GB_(USD_at_start_of_2020),Internet_users,Population,Avg_Speed(Mbit/s)
 0,IL,Israel,Asia,27,0.05,0.02,20.95,0.11,0.9,6788737,8381516,28.01
 1,KG,Kyrgyzstan,Asia,20,0.15,0.1,7.08,0.21,0.27,2309235,6304030,16.3
 2,FJ,Fiji,Oceania,18,0.19,0.05,0.85,0.59,3.57,452479,883483,25.99
