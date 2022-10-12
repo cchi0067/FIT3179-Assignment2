@@ -11,7 +11,7 @@
     
         "width": 300,
         "height": 300,
-        "background": "#252525",
+        "background": "null",
     "data": {
       "url": "https://raw.githubusercontent.com/cchi0067/FIT3179-Assignment2/main/data/world_internet_data.csv"
     },
