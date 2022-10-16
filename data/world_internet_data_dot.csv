@@ -1,0 +1,459 @@
+Continental region,Country,Label,Values
+Africa,Algeria,Cheapest,0.16
+Africa,Algeria,Expensive,2.24
+Africa,Angola,Cheapest,1.03
+Africa,Angola,Expensive,3.21
+Africa,Benin,Cheapest,0.45
+Africa,Benin,Expensive,60.21
+Africa,Botswana,Cheapest,1.63
+Africa,Botswana,Expensive,36.23
+Africa,Burkina Faso,Cheapest,2.35
+Africa,Burkina Faso,Expensive,18.06
+Africa,Burundi,Cheapest,0.09
+Africa,Burundi,Expensive,5.12
+Africa,Cabo Verde,Cheapest,1.07
+Africa,Cabo Verde,Expensive,48.35
+Africa,Cameroon,Cheapest,0.6
+Africa,Cameroon,Expensive,7.22
+Africa,Central African Republic,Cheapest,3.01
+Africa,Central African Republic,Expensive,60.21
+Africa,Chad,Cheapest,2.21
+Africa,Chad,Expensive,45.16
+Africa,Comoros,Cheapest,0.6
+Africa,Comoros,Expensive,96.41
+Africa,Congo,Cheapest,1
+Africa,Congo,Expensive,7.64
+Africa,Côte d'Ivoire,Cheapest,1.17
+Africa,Côte d'Ivoire,Expensive,18.06
+Africa,Djibouti,Cheapest,0.47
+Africa,Djibouti,Expensive,28.01
+Africa,Egypt,Cheapest,0.02
+Africa,Egypt,Expensive,2.38
+Africa,Equatorial Guinea,Cheapest,45.16
+Africa,Equatorial Guinea,Expensive,63.22
+Africa,Eswatini,Cheapest,0.69
+Africa,Eswatini,Expensive,2.8
+Africa,Ethiopia,Cheapest,1.41
+Africa,Ethiopia,Expensive,4.17
+Africa,Gabon,Cheapest,1.06
+Africa,Gabon,Expensive,18.06
+Africa,Gambia,Cheapest,2.37
+Africa,Gambia,Expensive,97.71
+Africa,Ghana,Cheapest,0.17
+Africa,Ghana,Expensive,3.47
+Africa,Guinea,Cheapest,0.79
+Africa,Guinea,Expensive,4.96
+Africa,GuineaBissau,Cheapest,2.25
+Africa,GuineaBissau,Expensive,36.12
+Africa,Kenya,Cheapest,0.26
+Africa,Kenya,Expensive,10.93
+Africa,Lesotho,Cheapest,1.29
+Africa,Lesotho,Expensive,9.02
+Africa,Liberia,Cheapest,1.55
+Africa,Liberia,Expensive,20
+Africa,Libya,Cheapest,0
+Africa,Libya,Expensive,2.22
+Africa,Madagascar,Cheapest,0.66
+Africa,Madagascar,Expensive,50.09
+Africa,Malawi,Cheapest,20.37
+Africa,Malawi,Expensive,25.46
+Africa,Mali,Cheapest,1.2
+Africa,Mali,Expensive,169.79
+Africa,Mauritania,Cheapest,2.78
+Africa,Mauritania,Expensive,13.91
+Africa,Mauritius,Cheapest,0.04
+Africa,Mauritius,Expensive,6.49
+Africa,Mayotte,Cheapest,0.25
+Africa,Mayotte,Expensive,6.8
+Africa,Morocco,Cheapest,0.44
+Africa,Morocco,Expensive,5.5
+Africa,Mozambique,Cheapest,0.19
+Africa,Mozambique,Expensive,6.98
+Africa,Niger,Cheapest,0.47
+Africa,Niger,Expensive,12.04
+Africa,Nigeria,Cheapest,0.03
+Africa,Nigeria,Expensive,5.25
+Africa,Réunion,Cheapest,0.24
+Africa,Réunion,Expensive,118.2
+Africa,Rwanda,Cheapest,0.35
+Africa,Rwanda,Expensive,23.1
+Africa,Saint Helena Ascension and Tristan da Cunha,Cheapest,38.57
+Africa,Saint Helena Ascension and Tristan da Cunha,Expensive,51.42
+Africa,São Tomé and Príncipe,Cheapest,13.27
+Africa,São Tomé and Príncipe,Expensive,121.65
+Africa,Senegal,Cheapest,0.3
+Africa,Senegal,Expensive,6.02
+Africa,Seychelles,Cheapest,2.36
+Africa,Seychelles,Expensive,22.67
+Africa,Sierra Leone,Cheapest,2.17
+Africa,Sierra Leone,Expensive,4.4
+Africa,Somalia,Cheapest,0.18
+Africa,Somalia,Expensive,6.67
+Africa,South Africa,Cheapest,0.12
+Africa,South Africa,Expensive,34.95
+Africa,Sudan,Cheapest,0.03
+Africa,Sudan,Expensive,0.92
+Africa,Tanzania,Cheapest,0.28
+Africa,Tanzania,Expensive,4.31
+Africa,Togo,Cheapest,2.03
+Africa,Togo,Expensive,40.64
+Africa,Tunisia,Cheapest,0.33
+Africa,Tunisia,Expensive,3.63
+Africa,Uganda,Cheapest,0.45
+Africa,Uganda,Expensive,22.71
+Africa,Western Sahara,Cheapest,0.44
+Africa,Western Sahara,Expensive,5.5
+Africa,Zambia,Cheapest,0.01
+Africa,Zambia,Expensive,6.8
+Asia,Afghanistan,Cheapest,0.38
+Asia,Afghanistan,Expensive,2.12
+Asia,Armenia,Cheapest,0.22
+Asia,Armenia,Expensive,13.02
+Asia,Azerbaijan,Cheapest,0.24
+Asia,Azerbaijan,Expensive,9.8
+Asia,Bahrain,Cheapest,1.27
+Asia,Bahrain,Expensive,8.49
+Asia,Bangladesh,Cheapest,0.11
+Asia,Bangladesh,Expensive,2.22
+Asia,Bhutan,Cheapest,0.33
+Asia,Bhutan,Expensive,1.06
+Asia,British Indian Ocean Territory,Cheapest,6.67
+Asia,British Indian Ocean Territory,Expensive,10
+Asia,Brunei,Cheapest,1.78
+Asia,Brunei,Expensive,7.43
+Asia,Cambodia,Cheapest,0.1
+Asia,Cambodia,Expensive,2
+Asia,China,Cheapest,0.3
+Asia,China,Expensive,1.21
+Asia,Cyprus,Cheapest,2.06
+Asia,Cyprus,Expensive,59.1
+Asia,East Timor,Cheapest,0.83
+Asia,East Timor,Expensive,2.5
+Asia,Hong Kong China,Cheapest,0.21
+Asia,Hong Kong China,Expensive,10.73
+Asia,India,Cheapest,0.05
+Asia,India,Expensive,2.73
+Asia,Indonesia,Cheapest,0.17
+Asia,Indonesia,Expensive,2.94
+Asia,Iran,Cheapest,0.22
+Asia,Iran,Expensive,6.21
+Asia,Iraq,Cheapest,0.68
+Asia,Iraq,Expensive,27.35
+Asia,Israel,Cheapest,0.02
+Asia,Israel,Expensive,20.95
+Asia,Japan,Cheapest,0.88
+Asia,Japan,Expensive,45.53
+Asia,Jordan,Cheapest,0.24
+Asia,Jordan,Expensive,7.05
+Asia,Kazakhstan,Cheapest,0.25
+Asia,Kazakhstan,Expensive,2.35
+Asia,Kuwait,Cheapest,0.01
+Asia,Kuwait,Expensive,6.29
+Asia,Kyrgyzstan,Cheapest,0.1
+Asia,Kyrgyzstan,Expensive,7.08
+Asia,Laos,Cheapest,0.18
+Asia,Laos,Expensive,4.25
+Asia,Lebanon,Cheapest,2.42
+Asia,Lebanon,Expensive,155.4
+Asia,Macau,Cheapest,0.99
+Asia,Macau,Expensive,8.29
+Asia,Malaysia,Cheapest,0.12
+Asia,Malaysia,Expensive,7.26
+Asia,Maldives,Cheapest,1.85
+Asia,Maldives,Expensive,12.95
+Asia,Mongolia,Cheapest,0.22
+Asia,Mongolia,Expensive,3.7
+Asia,Myanmar,Cheapest,0
+Asia,Myanmar,Expensive,14.15
+Asia,Nepal,Cheapest,0.22
+Asia,Nepal,Expensive,2.66
+Asia,Oman,Cheapest,0.13
+Asia,Oman,Expensive,8.67
+Asia,Pakistan,Cheapest,0.06
+Asia,Pakistan,Expensive,8.59
+Asia,Palestine,Cheapest,0.46
+Asia,Palestine,Expensive,3.64
+Asia,Philippines,Cheapest,0.95
+Asia,Philippines,Expensive,8.21
+Asia,Qatar,Cheapest,1.1
+Asia,Qatar,Expensive,4.39
+Asia,Russia,Cheapest,0.13
+Asia,Russia,Expensive,1.86
+Asia,Saudi Arabia,Cheapest,0.33
+Asia,Saudi Arabia,Expensive,13.33
+Asia,Singapore,Cheapest,0.25
+Asia,Singapore,Expensive,74.32
+Asia,South Korea,Cheapest,0.06
+Asia,South Korea,Expensive,96.88
+Asia,Sri Lanka,Cheapest,0
+Asia,Sri Lanka,Expensive,5.53
+Asia,Syria,Cheapest,0.19
+Asia,Syria,Expensive,38.8
+Asia,Taiwan,Cheapest,0.42
+Asia,Taiwan,Expensive,46.67
+Asia,Tajikistan,Cheapest,0.87
+Asia,Tajikistan,Expensive,13.12
+Asia,Thailand,Cheapest,0.34
+Asia,Thailand,Expensive,10.32
+Asia,Turkey,Cheapest,0.05
+Asia,Turkey,Expensive,2.26
+Asia,Turkmenistan,Cheapest,7.14
+Asia,Turkmenistan,Expensive,30.44
+Asia,United Arab Emirates,Cheapest,0.8
+Asia,United Arab Emirates,Expensive,34.3
+Asia,Uzbekistan,Cheapest,0.01
+Asia,Uzbekistan,Expensive,23.75
+Asia,Vietnam,Cheapest,0.07
+Asia,Vietnam,Expensive,5.55
+Asia,Yemen,Cheapest,0.4
+Asia,Yemen,Expensive,39.94
+Europe,Åland Islands,Cheapest,2.35
+Europe,Åland Islands,Expensive,8.81
+Europe,Albania,Cheapest,0.72
+Europe,Albania,Expensive,96.39
+Europe,Andorra,Cheapest,1.06
+Europe,Andorra,Expensive,65.07
+Europe,Austria,Cheapest,0.24
+Europe,Austria,Expensive,23.43
+Europe,Belarus,Cheapest,0.02
+Europe,Belarus,Expensive,16.62
+Europe,Belgium,Cheapest,1.48
+Europe,Belgium,Expensive,21.3
+Europe,Bosnia and Herzegovina,Cheapest,0.63
+Europe,Bosnia and Herzegovina,Expensive,21.26
+Europe,Bulgaria,Cheapest,0.63
+Europe,Bulgaria,Expensive,84.5
+Europe,Croatia,Cheapest,0.26
+Europe,Croatia,Expensive,12.92
+Europe,Czech Republic,Cheapest,0.94
+Europe,Czech Republic,Expensive,36.05
+Europe,Denmark,Cheapest,0
+Europe,Denmark,Expensive,2.23
+Europe,Estonia,Cheapest,0.35
+Europe,Estonia,Expensive,18.93
+Europe,Faroe Islands,Cheapest,1.1
+Europe,Faroe Islands,Expensive,163.9
+Europe,Finland,Cheapest,0.26
+Europe,Finland,Expensive,1.63
+Europe,France,Cheapest,0.09
+Europe,France,Expensive,118.2
+Europe,Georgia,Cheapest,0.3
+Europe,Georgia,Expensive,7.98
+Europe,Germany,Cheapest,0.35
+Europe,Germany,Expensive,11.83
+Europe,Gibraltar,Cheapest,1.67
+Europe,Gibraltar,Expensive,2.98
+Europe,Greece,Cheapest,1.06
+Europe,Greece,Expensive,768.87
+Europe,Guernsey,Cheapest,0.16
+Europe,Guernsey,Expensive,54.84
+Europe,Hungary,Cheapest,0.16
+Europe,Hungary,Expensive,8.04
+Europe,Iceland,Cheapest,0.16
+Europe,Iceland,Expensive,17.29
+Europe,Ireland,Cheapest,0.13
+Europe,Ireland,Expensive,11.64
+Europe,Isle of Man,Cheapest,0.42
+Europe,Isle of Man,Expensive,34.28
+Europe,Italy,Cheapest,0.09
+Europe,Italy,Expensive,3.54
+Europe,Jersey,Cheapest,0.54
+Europe,Jersey,Expensive,17.14
+Europe,Latvia,Cheapest,0.29
+Europe,Latvia,Expensive,70.87
+Europe,Liechtenstein,Cheapest,0.19
+Europe,Liechtenstein,Expensive,24.06
+Europe,Lithuania,Cheapest,0.09
+Europe,Lithuania,Expensive,17.75
+Europe,Luxembourg,Cheapest,1.42
+Europe,Luxembourg,Expensive,7.1
+Europe,Malta,Cheapest,0.82
+Europe,Malta,Expensive,59.04
+Europe,Moldova,Cheapest,0.07
+Europe,Moldova,Expensive,2.79
+Europe,Monaco,Cheapest,0.84
+Europe,Monaco,Expensive,2.37
+Europe,Montenegro,Cheapest,0.14
+Europe,Montenegro,Expensive,5.9
+Europe,North Macedonia,Cheapest,0.48
+Europe,North Macedonia,Expensive,9.6
+Europe,Norway,Cheapest,1.74
+Europe,Norway,Expensive,29.03
+Europe,Poland,Cheapest,0.03
+Europe,Poland,Expensive,23.02
+Europe,Portugal,Cheapest,1.18
+Europe,Portugal,Expensive,14.15
+Europe,Romania,Cheapest,0.11
+Europe,Romania,Expensive,11.83
+Europe,San Marino,Cheapest,0.24
+Europe,San Marino,Expensive,0.63
+Europe,Serbia,Cheapest,0.17
+Europe,Serbia,Expensive,14.09
+Europe,Slovakia,Cheapest,1.04
+Europe,Slovakia,Expensive,35.5
+Europe,Slovenia,Cheapest,0.02
+Europe,Slovenia,Expensive,88.68
+Europe,Spain,Cheapest,0.57
+Europe,Spain,Expensive,57.98
+Europe,Svalbard and Jan Mayen,Cheapest,0.58
+Europe,Svalbard and Jan Mayen,Expensive,29.03
+Europe,Sweden,Cheapest,0.2
+Europe,Sweden,Expensive,75.08
+Europe,Switzerland,Cheapest,1.6
+Europe,Switzerland,Expensive,17.83
+Europe,The Netherlands,Cheapest,0.77
+Europe,The Netherlands,Expensive,15.97
+Europe,Ukraine,Cheapest,0.14
+Europe,Ukraine,Expensive,35.88
+Europe,United Kingdom,Cheapest,0.11
+Europe,United Kingdom,Expensive,71.29
+North America,Anguilla,Cheapest,1.11
+North America,Anguilla,Expensive,15.91
+North America,Antigua and Barbuda,Cheapest,1.48
+North America,Antigua and Barbuda,Expensive,42.18
+North America,Aruba (Netherlands),Cheapest,1.48
+North America,Aruba (Netherlands),Expensive,17.92
+North America,Bahamas,Cheapest,3.99
+North America,Bahamas,Expensive,10.74
+North America,Barbados,Cheapest,4.94
+North America,Barbados,Expensive,64.24
+North America,Belize,Cheapest,1.48
+North America,Belize,Expensive,6.82
+North America,Bermuda,Cheapest,4.17
+North America,Bermuda,Expensive,100
+North America,Canada,Cheapest,0.8
+North America,Canada,Expensive,79.54
+North America,Cayman Islands,Cheapest,4.79
+North America,Cayman Islands,Expensive,41.48
+North America,Costa Rica,Cheapest,1.6
+North America,Costa Rica,Expensive,2.94
+North America,Cuba,Cheapest,3.2
+North America,Cuba,Expensive,12.5
+North America,Curaçao,Cheapest,2.78
+North America,Curaçao,Expensive,14.34
+North America,Dominica,Cheapest,1.11
+North America,Dominica,Expensive,14.62
+North America,Dominican Republic,Cheapest,0.33
+North America,Dominican Republic,Expensive,18.17
+North America,El Salvador,Cheapest,0.5
+North America,El Salvador,Expensive,7.5
+North America,Greenland,Cheapest,2.22
+North America,Greenland,Expensive,11.43
+North America,Grenada,Cheapest,1.84
+North America,Grenada,Expensive,4.44
+North America,Guadeloupe,Cheapest,0.49
+North America,Guadeloupe,Expensive,3.55
+North America,Guatemala,Cheapest,1.29
+North America,Guatemala,Expensive,5.14
+North America,Haiti,Cheapest,0.27
+North America,Haiti,Expensive,1.9
+North America,Honduras,Cheapest,0.69
+North America,Honduras,Expensive,50
+North America,Jamaica,Cheapest,0.86
+North America,Jamaica,Expensive,9.6
+North America,Martinique,Cheapest,0.59
+North America,Martinique,Expensive,106.49
+North America,Mexico,Cheapest,1.2
+North America,Mexico,Expensive,12.06
+North America,Montserrat,Cheapest,1.11
+North America,Montserrat,Expensive,29.23
+North America,Nicaragua,Cheapest,0.02
+North America,Nicaragua,Expensive,2.82
+North America,North America Netherlands,Cheapest,6.25
+North America,North America Netherlands,Expensive,24
+North America,Panama,Cheapest,2
+North America,Panama,Expensive,7.48
+North America,Puerto Rico (U.S.),Cheapest,0.5
+North America,Puerto Rico (U.S.),Expensive,20
+North America,Saint Barthélemy (St. Barts),Cheapest,0.59
+North America,Saint Barthélemy (St. Barts),Expensive,106.49
+North America,Saint Kitts and Nevis,Cheapest,1.85
+North America,Saint Kitts and Nevis,Expensive,24.42
+North America,Saint Lucia,Cheapest,1.46
+North America,Saint Lucia,Expensive,4.44
+North America,Saint Vincent and the Grenadines,Cheapest,1.48
+North America,Saint Vincent and the Grenadines,Expensive,3.33
+North America,SaintMartin (France),Cheapest,0.59
+North America,SaintMartin (France),Expensive,106.49
+North America,Sint Maarten,Cheapest,0.83
+North America,Sint Maarten,Expensive,6.92
+North America,Trinidad and Tobago,Cheapest,0.21
+North America,Trinidad and Tobago,Expensive,143.18
+North America,Turks and Caicos Islands,Cheapest,5
+North America,Turks and Caicos Islands,Expensive,23
+North America,U.S. Virgin Islands,Cheapest,0.5
+North America,U.S. Virgin Islands,Expensive,8.33
+North America,United States,Cheapest,1
+North America,United States,Expensive,30
+North America,Virgin Islands (British),Cheapest,3.38
+North America,Virgin Islands (British),Expensive,29.9
+Oceania,American Samoa,Cheapest,1.33
+Oceania,American Samoa,Expensive,2.92
+Oceania,Australia,Cheapest,0.1
+Oceania,Australia,Expensive,7.62
+Oceania,Cocos (Keeling) Islands,Cheapest,7.62
+Oceania,Cocos (Keeling) Islands,Expensive,19.32
+Oceania,Cook Islands,Cheapest,1.49
+Oceania,Cook Islands,Expensive,11.42
+Oceania,Fiji,Cheapest,0.05
+Oceania,Fiji,Expensive,0.85
+Oceania,French Polynesia,Cheapest,1.65
+Oceania,French Polynesia,Expensive,52.66
+Oceania,Guam,Cheapest,1
+Oceania,Guam,Expensive,70
+Oceania,Kiribati,Cheapest,2.35
+Oceania,Kiribati,Expensive,22.87
+Oceania,Micronesia,Cheapest,0.99
+Oceania,Micronesia,Expensive,59.16
+Oceania,Nauru,Cheapest,7.62
+Oceania,Nauru,Expensive,7.62
+Oceania,New Caledonia,Cheapest,2.1
+Oceania,New Caledonia,Expensive,210.16
+Oceania,New Zealand,Cheapest,1.22
+Oceania,New Zealand,Expensive,27.98
+Oceania,Niue,Cheapest,4.48
+Oceania,Niue,Expensive,28.69
+Oceania,Northern Mariana Islands,Cheapest,1
+Oceania,Northern Mariana Islands,Expensive,60
+Oceania,Palau,Cheapest,1
+Oceania,Palau,Expensive,2.5
+Oceania,Papua New Guinea,Cheapest,0.71
+Oceania,Papua New Guinea,Expensive,9.61
+Oceania,Samoa,Cheapest,0.19
+Oceania,Samoa,Expensive,6.86
+Oceania,Solomon Islands,Cheapest,3.14
+Oceania,Solomon Islands,Expensive,12.55
+Oceania,Tokelau,Cheapest,15.54
+Oceania,Tokelau,Expensive,27.98
+Oceania,Tonga,Cheapest,1.09
+Oceania,Tonga,Expensive,1.46
+Oceania,Tuvalu,Cheapest,5.72
+Oceania,Tuvalu,Expensive,10.17
+Oceania,Vanuatu,Cheapest,0.75
+Oceania,Vanuatu,Expensive,28.23
+South America,Argentina,Cheapest,0.44
+South America,Argentina,Expensive,11.47
+South America,Bolivia,Cheapest,0.87
+South America,Bolivia,Expensive,14.44
+South America,Brazil,Cheapest,0.18
+South America,Brazil,Expensive,2.72
+South America,Chile,Cheapest,0.24
+South America,Chile,Expensive,1.83
+South America,Colombia,Cheapest,0.42
+South America,Colombia,Expensive,9.88
+South America,Ecuador,Cheapest,0.63
+South America,Ecuador,Expensive,3
+South America,Falkland Islands,Cheapest,29.71
+South America,Falkland Islands,Expensive,82.26
+South America,French Guiana,Cheapest,0.82
+South America,French Guiana,Expensive,5.91
+South America,Guyana,Cheapest,3.82
+South America,Guyana,Expensive,9.52
+South America,Paraguay,Cheapest,0.73
+South America,Paraguay,Expensive,9.12
+South America,Peru,Cheapest,0.85
+South America,Peru,Expensive,15.58
+South America,Suriname,Cheapest,1.72
+South America,Suriname,Expensive,2.73
+South America,Uruguay,Cheapest,0.1
+South America,Uruguay,Expensive,6.33
