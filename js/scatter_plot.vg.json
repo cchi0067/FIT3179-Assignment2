@@ -228,6 +228,96 @@
         "encoding": {
           "text": {"type": "nominal", "field": "R2"}
         }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 130,
+          "dy": -45,
+          "fontSize": 12,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"value": "Average Internet price"},
+          "color": {"value": "red"}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 130,
+          "dy": -30,
+          "fontSize": 12,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"value": "in Cyprus is the highest."},
+          "color": {"value": "red"}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 180,
+          "dy": -190,
+          "fontSize": 12,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"value": "United Arab"},
+          "color": {"value": "red"}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 180,
+          "dy": -175,
+          "fontSize": 12,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"value": "Emirates has"},
+          "color": {"value": "red"}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 180,
+          "dy": -160,
+          "fontSize": 12,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"value": "the fastest"},
+          "color": {"value": "red"}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 180,
+          "dy": -145,
+          "fontSize": 12,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"value": "Internet."},
+          "color": {"value": "red"}
+        }
       }
     ]
   }
