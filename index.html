@@ -1,91 +1,246 @@
-<!-- <div id="chart"></div>
-
-<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-<script src="js/radial_bar.js"></script> -->
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-
-  <!-- Import pure.css -->
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
-    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <!-- Google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
-  <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
-  
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,900">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+<style>
+body {font-family: "Lato", sans-serif; font-size: 18px;}
+.mySlides {display: none}
+</style>
 </head>
 <body>
 
-<div class="page" style="padding: 65px; background-color: #252525; background-image: linear-gradient(#252525, #2b1e3b);">
-
-
-        <h1 style="color: white; align-items: center; display: flex; justify-content: center;" >Internet around the World</h1>
-
-        <h2 style="color: white; align-items: center; display: flex; justify-content: center; background-color: rgb(67, 67, 67); padding: 10px;" >Number of Internet Users around the World</h2>
-
-
-        <div class="pure-u-1-3" style=" display: flex;">
-            <div id="vis1" class="vis-container" style="left: 40%; align-items: center; justify-content: center;"></div>
-        </div>
-
-        <h2 style="color: white; align-items: center; display: flex; justify-content: center; background-color: rgb(67, 67, 67); padding: 10px;" >Number of Internet Plans per Continent</h2>
-        <div class="pure-g">
-            <div class="pure-u-1-3" style="margin-top: 0%; ">
-                <div id="vis3" class="vis-container" style="left: 100%; align-items: center; justify-content: center;"></div>
-            </div>
-
-            <!-- <div class="description-right" style="margin-top: 0%; left: 60% ">
-                <p> hello my name</p>
-            </div> -->
-        </div>
-
-        <h2 style="color: white; align-items: center; display: flex; justify-content: center; background-color: rgb(67, 67, 67); padding: 10px;" >Does Internet Speed increase with Price?</h2>
-
-        <div class="pure-u-1-3" style="margin-top: 0%;">
-            <div id="vis2" class="vis-container" style="left: 100%; "></div>
-          </div>
-
-        <h2 style="color: white; align-items: center; display: flex; justify-content: center; background-color: rgb(67, 67, 67); padding: 10px;" >Top 5 Countries with the Fastest Internet Speed</h2>
-
-        <div class="pure-u-1-3" style="margin-left: 5%; ">
-            <div id="vis4" class="vis-container" style="left: 40%; align-items: center; justify-content: center;" ></div>
-        </div>
-
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#intro" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INTRODUCTION</a>
+    <a href="#user-count" class="w3-bar-item w3-button w3-padding-large w3-hide-small">USER COUNT</a>
+    <a href="#percentage" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PERCENTAGE</a>
+    <a href="#speed" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SPEED</a>
+    <a href="#price" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRICE</a>
+  </div>
 </div>
 
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#intro" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INTRODUCTION</a>
+  <a href="#user-count" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">USER COUNT</a>
+  <a href="#percentage" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PERCENTAGE</a>
+  <a href="#speed" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SPEED</a>
+  <a href="#price" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRICE</a>
+</div>
+
+<!-- Page content -->
+<div style="max-width:2000px;margin-top:46px">
+
+  <!-- Main Cover -->
+  <div class="w3-display-container w3-center">
+    <img src="/components/internet.jpg" style="width:100%; height: 480px">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small" style="width:100%; bottom: 50px;">
+      <h1 class="w3-wide" style="font-size: 42px;">INTERNET AROUND THE WORLD</h1>
+
+      <p><i>"The town square for the global village of tomorrow." - Bill Gates</i></p>
+    </div>
+  </div>
+
+
+  <!-- The Introduction Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px" id="intro">
+    <h2 class="w3-wide">INTRODUCTION</h2>
+
+    <p class="w3-opacity"><i>Always keeping us connected.</i></p>
+
+    <p class="w3-justify">In this modern era of blossoming technology, the Internet has become an essential part of our lives
+      whether we like it or not. Also known as the Net, it is the main terminal which connects us all; With just a simple click, we have 
+      access to a plethora of data sources and worldwide communication, keeping us unconditionally linked as long as we are "online".
+    </p>
+
+    <p class="w3-justify">In this project, we will explore interesting information on the number of Internet users, plans, and
+      pricing in the four corners of the world through various visualisations created using the data visualisation library, Vega-lite. 
+    </p>
+  </div>
+
+  <!-- Number of Internet Users Globally -->
+  <div class="w3-black " id="user-count">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px">
+      <h2 class="w3-wide">DENSITY OF INTERNET USERS BY COUNTRY IN 2022</h2>
+
+      <p class="w3-opacity"><i>Check out the Internet user density of each country!</i></p>
+
+      <p class="w3-justify">
+        The choropleth map below visualises the number of Internet uses per 10,000 people in different countries around the world
+        in the year 2022. The country with the highest density of Internet users is shown to be the <span style="font-weight:900;">United Kingdom</span> with a whopping value of 
+        <span style="font-weight:900;">9681.17 users</span> per 10,000 people. On the other hand, the country with the lowest density of Internet users is <span style="font-weight:900;">
+        Somalia</span> with a value of <span style="font-weight:900;">196.46 users</span> with 10,000 people.
+      </p>
+
+      <div class="w3-row-padding w3-padding-32 w3-center" style="margin:0px;">
+          <div class="w3-container w3-white" id="vis1" style="padding: 8px; right: 10px"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Percentage Section -->
+  <div class="w3-container w3-center w3-content w3-padding-64" style="max-width:1200px" id="percentage">
+    <h2 class="w3-wide">PERCENTAGE BY CONTINENT IN 2022 OF</h2>
+    <div class="w3-half" style="padding-right: 40px">
+      <h3 class="w3-wide w3-center">INTERNET USERS</h2>
+
+      <p class="w3-opacity w3-center"><i>The global makeup of Internet users by continent.</i></p>
+
+      <p class="w3-justify">
+        When taking a look at Internet user makeup of each continent globally, <span style="font-weight:900;">Asia</span> actually contributes the highest percentage to the total number of global Internet users which is 
+        <span style="font-weight:900;">64%</span>. <span style="font-weight:900;">Europe and North America</span> then contribute the same percentage value of <span style="font-weight:900;">10%
+        </span>to the number of global Internet users. The continent which contributes the smallest percentage turns out to be <span style="font-weight:900;">Oceania</span> accomodating to only <span style="font-weight:900;">1%</span>
+        of the world's Internet users.
+      </p>
+
+        <div class="w3-container w3-white w3-center" id="vis2" style="left:12.5%"></div>
+    </div>
+
+    <div class="w3-half" style="padding-left: 40px">
+      <h3 class="w3-wide w3-center">INTERNET PLANS</h2>
+
+      <p class="w3-opacity w3-center"><i>The percentage of Internet plans available by continent.</i></p>
+
+      <p class="w3-justify">
+       In terms of Internet plans, Asia also takes the lead with the highest number of Internet plans among all continents which is <span style="font-weight:900;">1781</span>, making up approximately <span style="font-weight:900;">29%</span>
+       of the global number of Internet plans. <span style="font-weight:900;">Africa</span> then follows up with about <span style="font-weight:900;">24%</span> of the global number of Internet plans and <span style="font-weight:900;">Europe</span> with 
+       <span style="font-weight:900;">21%</span>. Consistent with the Internet user percentage, the continent with the least number of Internet plans turns out to be <span style="font-weight:900;">Oceania</span> contributing <span style="font-weight:900;">6%</span>
+       to the global number.
+      </p>
+
+        <div class="w3-container w3-white w3-center" id="vis3" style="left:20px"></div>
+    </div>
+  </div>
+
+  <!-- Countries with Fastest Internet Speed-->
+  <div class="w3-black " id="speed">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px">
+      <h2 class="w3-wide">COUNTRIES WITH FASTEST INTERNET IN 2022</h2>
+
+      <p class="w3-opacity"><i>Faster and faster!</i></p>
+
+      <p class="w3-justify">
+        Interested in knowing the top countries with the fastest Internet? Our visualisation shows that <span style="font-weight:900;">half</span> of the countries with the fastest Internet 
+        actually hails from Asia including the country with the top Internet speed, <span style="font-weight:900;">United Arab Emirates</span>, with an impressive speed of <span style="font-weight:900;">135.35</span>
+         Megabits per second! It can also be seen that the average Internet Speed around the world is <span style="font-weight:900;">37.34</span> Megabits per second.
+      </p>
+
+      <div class="w3-row-padding w3-padding-32 w3-center" style="margin:0px;">
+          <div class="w3-container w3-white" id="vis4" style="padding: 8px; padding-bottom: 30px; right: 10px"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Countries with Fastest Internet Speed-->
+  <div id="price">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px">
+      <h2 class="w3-wide">COUNTRIES WITH THE HIGHEST INTERNET PRICE in 2022</h2>
+
+      <p class="w3-opacity"><i>What is Internet if you cannot afford it?</i></p>
+
+      <p class="w3-justify">
+        As with many things in life, the Internet comes with a price. In this visualisation, we take a look at the countries with the highest Internet price in terms of
+        US dollars. It can be seen that the country with the highest Internet price is <span style="font-weight:900;">Equatorial Guinea</span> with a price of 
+        <span style="font-weight:900;">$49.67</span>. Another interesting observation is <span style="font-weight:900;">half of the countries</span> that 
+        made it into the top 10 countries with the highest Internet price are from the continent of <span style="font-weight:900;">Africa</span>.
+      </p>
+
+      <div class="w3-row-padding w3-center" style="margin:0px;">
+          <div class="w3-container w3-white" id="vis5" style="padding: 8px; padding-bottom: 30px; right: 10px"></div>
+      </div>
+
+      <div class="w3-row-padding w3-padding-32 w3-center" style="margin:0px;">
+        <div class="w3-half" style="width:40%">
+          <h3 class="w3-wide w3-center">AVERAGE INTERNET SPEED AGAINST PRICE</h2>
+    
+          <p class="w3-opacity w3-center"><i>The more expensive, the faster?</i></p>
+    
+          <p class="w3-justify">
+            A popular assumption is when the cost of a product is higher, it is generally better in quality. Therefore, let's take a look into whether Internet subsribers
+            are getting their money's worth. Taking speed as a measure of Internet quality, the 
+            visualisation shows that generally, there is a <span style="font-weight:900;">positive correlation</span> between the speed and price of Internet due to the positive coefficient
+             of the linear regression. Hence, the hypothesis that <span style="font-weight:900;">Internet speed increases with Internet price</span> is true.
+          </p>
+
+        </div>
+
+        <div class="w3-half" style="padding-left: 40px; width:60%">
+          <div class="w3-container w3-white" id="vis6" style="padding: 8px; padding-bottom: 30px; right: 10px"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium" style="font-size: 18px;">Created by Christine Chiong, 31985270, as part of FIT3179 Assignment 2</p>
+  <p class="w3-medium">Made possible with Vega-lite and <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
 <script type="text/javascript">
-  var spec1 = "js/choropleth_map.vg.json";
+
+var spec1 = "js/choropleth_map.vg.json";
   vegaEmbed('#vis1', spec1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
-  var spec2 = "js/scatter_plot.vg.json";
-  vegaEmbed('#vis2', spec2).then(function(result) {
+var spec2 = "js/waffle_chart.vg.json";
+vegaEmbed('#vis2', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
-  var spec3 = "js/donut.vg.json";
-  vegaEmbed('#vis3', spec3).then(function(result) {
+var spec3 = "js/donut.vg.json";
+vegaEmbed('#vis3', spec3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
-  var spec4 = "js/bar_chart.vg.json";
-  vegaEmbed('#vis4', spec4).then(function(result) {
+var spec4 = "js/bar_chart.vg.json";
+vegaEmbed('#vis4', spec4).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+
+var spec5 = "js/hor_bar_chart.vg.json";
+vegaEmbed('#vis5', spec5).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+var spec6 = "js/scatter_plot.vg.json";
+vegaEmbed('#vis6', spec6).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 </script>
 
 </body>
