@@ -162,6 +162,67 @@
             {"field": "Number of Users", "type": "quantitative", "format": ".2f", "title": "Number of Internet Users per 10,000 people"}
           ]
         }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 285,
+          "dy": -30,
+          "fontSize": 12,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"value": "Malaysia"},
+          "color": {"value": "black"}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 400,
+          "dy": 70,
+          "fontSize": 12,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"value": "Australia"},
+          "color": {"value": "black"}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": -190,
+          "dy": -125,
+          "fontSize": 12,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"value": "United States"},
+          "color": {"value": "black"}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 320,
+          "dy": -105,
+          "fontSize": 12,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"value": "China"},
+          "color": {"value": "black"}
+        }
       }
+      
     ]
   }
