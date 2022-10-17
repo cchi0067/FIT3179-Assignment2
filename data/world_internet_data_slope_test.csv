@@ -52,7 +52,6 @@ Africa,Tunisia,3.67,1.37,1.09
 Africa,Uganda,5.02,1.62,1.56
 Africa,Western Sahara,1.18,0.99,0.88
 Africa,Zambia,2.25,1.36,1.13
-Africa Total,,449.78,334.23,290.91
 Asia,Afghanistan,1.6,1.55,1.02
 Asia,Armenia,2.51,1.05,0.76
 Asia,Azerbaijan,6.42,1.86,1.82
@@ -104,7 +103,6 @@ Asia,United Arab Emirates,10.23,3.78,7.62
 Asia,Uzbekistan,3.27,1.34,0.6
 Asia,Vietnam,1.31,0.57,0.49
 Asia,Yemen,15.73,15.98,15.98
-Asia Total,,287.81,156.07,142.34
 Europe,Åland Islands,4.64,3.24,2.75
 Europe,Albania,5.28,2.83,2.8
 Europe,Andorra,12.58,9.54,7.49
@@ -155,7 +153,6 @@ Europe,Switzerland,20.22,8.38,5.24
 Europe,The Netherlands,4.62,2.98,3.11
 Europe,Ukraine,5.93,0.46,0.75
 Europe,United Kingdom,6.66,1.39,1.42
-Europe Total,,304.39,151.19,120.39
 North America,Anguilla,14.12,5.92,3.85
 North America,Antigua and Barbuda,12.7,7.17,4.44
 North America,Aruba (Netherlands),11.12,18.22,8.88
@@ -196,7 +193,6 @@ North America,Turks and Caicos Islands,23.09,13.33,8
 North America,U.S. Virgin Islands,4.97,4.67,2
 North America,United States,8.34,8,3.33
 North America,Virgin Islands (British),18.55,12.5,9.54
-North America Total,,463.34,295.1,180.67
 Oceania,American Samoa,1.94,2.5,2
 Oceania,Australia,2.47,0.68,0.7
 Oceania,Cocos (Keeling) Islands,0,16.98,13.47
@@ -219,7 +215,6 @@ Oceania,Tokelau,29.96,17.75,20.48
 Oceania,Tonga,2.92,3.41,1.28
 Oceania,Tuvalu,12.42,0,6.35
 Oceania,Vanuatu,0,4.25,6.06
-Oceania Total,,218.22,157.06,121.1
 South America,Argentina,7.4,1.45,2.38
 South America,Bolivia,5.99,5.09,2.18
 South America,Brazil,3.5,1.01,0.92
@@ -233,5 +228,3 @@ South America,Paraguay,11.56,2.3,2.53
 South America,Peru,2.48,2.13,1.15
 South America,Suriname,6.08,4.92,1.94
 South America,Uruguay,2.8,1.58,1.51
-South America Total,,133.01,75.37,68.25
-Grand Total,,1856.55,1169.02,923.66
