@@ -1,27 +1,76 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "config": {
-        "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif", "titleColor": "#f2f0f7", "labelColor": "#f2f0f7"},
-        "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif", "titleColor": "#f2f0f7", "labelColor": "#f2f0f7"},
-        "header": {"labelFont": "monospace", "titleFont": "monospace", "titleColor": "#f2f0f7", "labelColor": "#f2f0f7"},
+        "view": {
+          "stroke": "transparent"
+        },
+        "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif", "titleColor": "black", "labelColor": "black"},
+        "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif", "titleColor": "black", "labelColor": "black"},
+        "header": {"labelFont": "monospace", "titleFont": "monospace", "titleColor": "black", "labelColor": "black"},
         "mark": {"font": "monospace"},
-        "title": {"font": "monospace", "subtitleFont": "monospace", "color": "#f2f0f7", "anchor": "start", "fontWeight": "bold", "fontSize": {"expr": "20"}, "subtitlePadding": {"expr": "10"}}
+        "title": {"font": "monospace", "subtitleFont": "monospace", "color": "black", "anchor": "start", "fontWeight": "bold", "fontSize": {"expr": "20"}, "subtitlePadding": {"expr": "10"}}
       },
         "padding": {"left": 20, "top": 20, "right": 20, "bottom": 20},
     
-        "width": 300,
-        "height": 300,
+        "width": 500,
+        "height": 400,
         "background": null,
     "data": {
       "url": "https://raw.githubusercontent.com/cchi0067/FIT3179-Assignment2/main/data/world_internet_data.csv"
     },
+    "params": [
+      {
+        "name": "Population_Above",
+        "value": 0,
+        "bind": {
+          "input": "range",
+          "min": 0,
+          "max": 500000000,
+          "step": 10000,
+          "name": "Minimum Population: "
+        }
+      },
+      {
+        "name": "Continent_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "labels": [
+            "Overall",
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "name": "Select a Continent: "
+        }
+      }],
     "transform": [
+        {
+          "filter": "Continent_selection == null || datum.Continental_region == Continent_selection"
+        },
+        {"filter": "datum.Population > Population_Above"},
         {"filter": "datum['Avg_Speed(Mbit/s)'] != 0"},
         {"filter": "datum['Average_price_of_1GB_(USD)'] != 0"},
         {"filter": "datum['Average_price_of_1GB_(USD)'] <= 15"}
       ],
     "layer": [
       {
+        "params": [
+          {
+              "name": "hover",
+              "select": {"type": "point", "on": "mouseover"}
+          }],
         "mark": {
           "type": "point",
           "filled": true
@@ -29,35 +78,107 @@
         "encoding": {
           "x": {
             "field": "Average_price_of_1GB_(USD)",
-            "type": "quantitative"
+            "type": "quantitative",
+            "axis": {"domain": false, "grid": false, "labelAngle": 0, "ticks": false}
           },
           "y": {
             "field": "Avg_Speed(Mbit/s)",
             "type": "quantitative"
           },
           "color": {
+            "title": "Continent",
             "field": "Continental_region",
             "type": "nominal",
-            "scale": {"range": [
-                "#542788",
-                "#998ec3",
-                "#d8daeb",
-                "#fee0b6",
-                "#f1a340",
-                "#b35806"]}
+            "scale": {
+              "domain": [
+                "Africa",
+                "Asia",
+                "Europe",
+                "North America",
+                "Oceania",
+                "South America"
+              ],
+              
+              "range": [
+                "#a8e8f9",
+                    "#219ebc",
+                    "#013c58",
+                    "#ffb703",
+                    "#fb8500",
+                    "#640101"]},
+                "legend": {
+                  "title": "Continent",
+                  "orient": "right",
+                  "offset": 10,
+                  "labelOffset": 3,
+                  "labelFontSize": 12,
+                  "titleFontSize":14,
+                  "titlePadding": 5,
+                  "padding": 5
+                }
           },
+          "size": {
+            "field": "Population",
+            "type": "quantitative",
+            "scale": {
+              "type": "threshold",
+              "domain": [1000000, 10000000, 50000000, 100000000, 500000000],
+              "range": [10, 50, 150, 200, 300, 400]
+            },
+            "legend": {
+              "title": "Population",
+              "orient": "right",
+              "offset": 10,
+              "labelOffset": 3,
+              "labelFontSize": 12,
+              "titleFontSize":14,
+              "titlePadding": 5,
+              "format": ".1s",
+              "padding": 5
+            }
+          },
+
+          "opacity":{
+            "condition": [
+            {
+              "param": "hover",
+              "value": 1
+            }],
+            "value": 0.2
+          },
+
+          "stroke": {
+            "condition": [{
+            "param": "hover",
+            "empty": false,
+            "value": "black"
+            }],
+            "value": null
+
+          },
+
+          "strokeWidth": {
+            "condition": [
+              {
+                "param": "hover",
+                "value": 2
+              }],
+              "value": null
+          },
+
           "tooltip": [
             {"field": "Country", "type": "nominal", "title": "Country"},
             {"field": "Continental_region", "type": "nominal", "title": "Continent"},
             {"field": "Average_price_of_1GB_(USD)", "type": "quantitative", "format": ".2f", "title": "Average price of 1GB (USD)"},
-            {"field": "Avg_Speed(Mbit/s)", "type": "quantitative", "format": ".2f", "title": "Average Internet Speed (Megabits per Second)"}
+            {"field": "Avg_Speed(Mbit/s)", "type": "quantitative", "format": ".2f", "title": "Average Internet Speed (Megabits per Second)"},
+            {"field": "Population", "type": "quantitative", "format": ",", "title": "Population"}
           ]
         }
       },
       {
         "mark": {
           "type": "line",
-          "color": "firebrick"
+          "color": "red"
         },
         "transform": [
           {
@@ -76,6 +197,14 @@
             "title": "Average Internet Speed (Megabits per Second)",
             "field": "Avg_Speed(Mbit/s)",
             "type": "quantitative"
+          },
+          "opacity":{
+            "condition": [
+            {
+              "param": "hover",
+              "value": 1
+            }],
+            "value": 0.2
           }
         }
       },
@@ -91,7 +220,7 @@
         ],
         "mark": {
           "type": "text",
-          "color": "firebrick",
+          "color": "red",
           "x": "width",
           "align": "right",
           "y": -5

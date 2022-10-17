@@ -1,0 +1,108 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
+        "view": {
+            "stroke": "transparent"
+         },
+        "axis": {"labelFont": "monospace", "titleFont": "monospace", "titleColor": "#f2f0f7", "labelColor": "#f2f0f7"},
+        "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif", "titleColor": "black", "labelColor": "black"},
+        "header": {"labelFont": "monospace", "titleFont": "monospace", "titleColor": "#f2f0f7", "labelColor": "#f2f0f7"},
+        "mark": {"font": "monospace"},
+        "title": {"font": "monospace", "subtitleFont": "monospace", "color": "#f2f0f7", "anchor": "start", "fontWeight": "bold", "fontSize": {"expr": "20"}, "subtitlePadding": {"expr": "10"}}
+      },
+        "padding": {"left": 20, "top": 20, "right": 20, "bottom": 20},
+    
+        "width": 350,
+        "height": 350,
+        "background": null,
+    "data": {
+        "url": "https://raw.githubusercontent.com/cchi0067/FIT3179-Assignment2/main/data/world_internet_data.csv"
+    },
+    "transform": [
+      {
+        "joinaggregate": [{"op": "sum", "field": "Internet_users", "as": "TotalInternetUsers"}]
+      },
+      {
+        "joinaggregate": [
+          {"op": "sum", "field": "Internet_users", "as": "TotalInternetUsersbyContinent"}
+        ],
+        "groupby": ["Continental_region"]
+      },
+      {
+        "calculate": "round(datum.TotalInternetUsersbyContinent/datum.TotalInternetUsers * 99.9)",
+        "as": "PercentOfTotal"
+      },
+      {
+        "aggregate": [{"op": "min", "field": "PercentOfTotal", "as": "P"}],
+        "groupby": ["Continental_region"]
+      },
+      {
+        "calculate": "datum.P/100", "as": "P/100"
+      },
+      {"calculate": "sequence(1,datum.P+1)", "as": "S"},
+      {"flatten": ["S"]},
+      {
+        "window": [{"op": "row_number", "as": "id"}],
+        "sort": [{"field": "Continental_region", "order": "descending"}]
+      },
+      {"calculate": "ceil (datum.id / 10)", "as": "row"},
+      {"calculate": "datum.id - datum.row * 10", "as": "col"}
+    ],
+    "params": [
+    {
+        "name": "hover",
+        "select": {"type": "point", "on": "mouseover"}
+    }],
+    "mark": {
+      "type": "square",
+      "filled": true,
+      "tooltip": true
+    },
+    "encoding": {
+      "x": {"field": "col", "type": "ordinal", "axis": null},
+      "y": {"field": "row", "type": "ordinal", "axis": null, "sort": "-y"},
+      "color": {
+        "field": "Continental_region",
+        "type": "nominal",
+        "scale": {"range": [
+                    "#a8e8f9",
+                    "#219ebc",
+                    "#013c58",
+                    "#ffb703",
+                    "#fb8500",
+                    "#640101"]},
+        "legend": {
+          "title": "Continent",
+          "orient": "right",
+          "offset": 100,
+          "labelOffset": 3,
+          "labelFontSize": 12,
+          "titleFontSize":14,
+          "titlePadding": 5
+        }
+
+      },
+      "stroke": {
+        "condition": [{
+        "param": "hover",
+        "empty": false,
+        "value": "black"
+        }],
+        "value": "white"
+
+      },
+
+      "opacity":{
+        "condition": [
+        {
+          "param": "hover",
+          "value": 1
+        }],
+        "value": 0.5
+      },
+      
+      "size": {"value": 750},
+      "tooltip": [{"field": "Continental_region", "type": "nominal", "title": "Continent"},
+      {"field": "P/100", "type": "quantitative", "title": "Percentage of Internet Users", "format": ".0%"}]
+    }
+  }
