@@ -1,0 +1,204 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
+        "view": {
+          "stroke": "transparent"
+        },
+        "axis": {"domain": false, "grid": false, "ticks": false, "labelFont": "sans-serif", "titleFont": "sans-serif", "titleColor": "black", "labelColor": "black"},
+        "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif", "titleColor": "black", "labelColor": "black"},
+        "header": {"labelFont": "monospace", "titleFont": "monospace", "titleColor": "black", "labelColor": "black"},
+        "mark": {"font": "monospace"},
+        "title": {"font": "monospace", "subtitleFont": "monospace", "color": "#f2f0f7", "anchor": "start", "fontWeight": "bold", "fontSize": {"expr": "20"}, "subtitlePadding": {"expr": "10"}}
+      },
+    "padding": {"left": 20, "top": 20, "right": 20, "bottom": 20},
+    
+    "background": null,
+    "data": {"url": "https://raw.githubusercontent.com/cchi0067/FIT3179-Assignment2/main/data/world_internet_data.csv"},
+    "params": [
+      {
+        "name": "Continent_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "labels": [
+            "Overall",
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "name": "Select a Continent: "
+        }
+      }
+    ],
+    "transform": [
+      {
+        "filter": "Continent_selection == null || datum.Continental_region == Continent_selection"
+      },
+      {"filter": "datum['Average_price_of_1GB_(USD)'] != null"},
+      {
+        "joinaggregate": [{
+          "op": "mean",
+          "field": "Average_price_of_1GB_(USD)",
+          "as": "AveragePrice"
+        }]
+      },
+      {"calculate": "(datum['Average_price_of_1GB_(USD)'] - datum.AveragePrice)" , "as": "score"},
+      {
+        "window": [{
+          "op": "rank",
+          "as": "rank"
+        }],
+        "sort": [{ "field": "score", "order": "descending" }]
+      }
+      , 
+      {
+        "filter": "datum.rank <= 30"
+      }
+
+    ],
+    "hconcat": [
+      {
+        "width": 700,
+        "height": 600,
+        "params": [{
+            "name": "hover",
+            "select": {"type": "point", "on": "mouseover"}
+        }],
+
+
+        "mark": {"type": "bar", "height": {"band": 0.9}},
+        "transform": [{"filter": {"param": "brush"}}],
+        
+        "encoding": {
+          "x": {
+            "field": "Average_price_of_1GB_(USD)", "type": "quantitative",
+            "title": "Average Internet Price (USD)",
+            "axis": {"orient": "top"}
+          },
+          "y": {"field": "Country", "type": "nominal", "sort": "-x", "axis": {"labelAngle": 0}, "scale": {"domain": {"param": "brush"}}},
+          "color": {
+            "field": "Continental_region",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "Africa",
+                "Asia",
+                "Europe",
+                "North America",
+                "Oceania",
+                "South America"
+              ],
+              
+              "range": [
+                "#a8e8f9",
+                    "#219ebc",
+                    "#013c58",
+                    "#ffb703",
+                    "#fb8500",
+                    "#640101"]},
+
+          "legend": {
+          "title": "Continent",
+          "orient": "right",
+          "offset": 10,
+          "labelOffset": 3,
+          "labelFontSize": 12,
+          "titleFontSize":14,
+          "titlePadding": 5
+        }
+          },
+
+          "stroke": {
+            "condition": [{
+            "param": "hover",
+            "empty": false,
+            "value": "black"
+            }],
+            "value": null
+
+          },
+
+          "strokeWidth": {
+            "condition": [{
+            "param": "hover",
+            "empty": false,
+            "value": 2.0
+            }],
+            "value": 0.2
+
+          },
+
+          "opacity":{
+            "condition": [
+            {
+              "param": "hover",
+              "value": 1
+            }],
+            "value": 0.5
+          },
+
+
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"},
+            {"field": "Continental_region", "type": "nominal", "title": "Continent"},
+            {"field": "Average_price_of_1GB_(USD)", "type": "quantitative", "format": ".2f", "title": "Average Internet Price (USD)"}
+          ]
+        }
+      },
+      {
+        "width": 80,
+        "height": 200,
+        "params": [{
+          "name": "brush",
+          "select": {
+            "type": "interval",
+            "encodings": ["y"]
+          }
+        }],
+
+        "mark": {"type": "bar"},
+        
+        "encoding": {
+          "x": {
+            "field": "Average_price_of_1GB_(USD)", "type": "quantitative",
+            "title": "Average Internet Price (USD)",
+            "axis": null
+          },
+          "y": {"field": "Country", "type": "nominal", "sort": "-x", "axis": null},
+          "color": {
+            "field": "Continental_region",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "Africa",
+                "Asia",
+                "Europe",
+                "North America",
+                "Oceania",
+                "South America"
+              ],
+              
+              "range": [
+                "#a8e8f9",
+                    "#219ebc",
+                    "#013c58",
+                    "#ffb703",
+                    "#fb8500",
+                    "#640101"]}
+          }
+        }
+      }
+
+    ]
+  }
