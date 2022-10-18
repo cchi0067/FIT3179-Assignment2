@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A double-layered donut chart for displaying the proportion of internet plans by continent and country in 2022.",
     "config": {
         "axis": {"labelFont": "monospace", "titleFont": "monospace", "titleColor": "#f2f0f7", "labelColor": "#f2f0f7"},
         "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif", "titleColor": "black", "labelColor": "black"},
@@ -54,6 +55,7 @@
                 }},
 
       {
+        
         "transform": [
           {
             "joinaggregate": [{"op": "sum", "field": "Sum_of_No_of_Internet_Plans", "as": "TotalInternetUsers"}]
@@ -77,6 +79,7 @@
 
         "mark": {"type": "arc", "radius2": 90, "radius": 160},
         "encoding": {
+        
           "color": {
             "field": "Continental_region",
             "type": "nominal",
@@ -90,7 +93,7 @@
               "legend": {
                 "title": "Continent",
                 "orient": "right",
-                "offset": 0,
+                "offset": 10,
                 "labelOffset": 3,
                 "labelFontSize": 12,
                 "titleFontSize":14,
@@ -104,7 +107,7 @@
                 "empty": false,
                 "value": "black"
                 }],
-                "value": null
+                "value": "white"
           },
 
           "strokeWidth": {
@@ -130,6 +133,90 @@
             {"field": "Continental_region", "type": "nominal", "title": "Continent"},
             {"field": "PercentOfTotal", "type": "quantitative", "title": "Percentage Number of Internet Plans", "format": ".0%"},
             {"field": "Sum_of_No_of_Internet_Plans", "type": "quantitative", "title": "Number of Internet Plans"}
+          ]
+        }
+      },
+      {
+        "params": [{
+          "name": "highlight",
+          "select": {"type": "point", "on": "mouseover"}
+        }],
+
+        "data": {
+          "url": "https://raw.githubusercontent.com/cchi0067/FIT3179-Assignment2/main/data/world_internet_data.csv"
+        },
+        "transform": [
+          {
+            "joinaggregate": [{"op": "sum", "field": "No_of_Internet_Plans", "as": "TotalInternetPlans"}]
+          },
+          {
+            "joinaggregate": [
+              {"op": "sum", "field": "No_of_Internet_Plans", "as": "TotalInternetPlansbyCountry"}
+            ],
+            "groupby": ["Country"]
+          },
+          {
+            "calculate": "datum.TotalInternetPlansbyCountry/datum.TotalInternetPlans",
+            "as": "PercentOfTotal"
+          }
+      ],
+
+        "mark": {"type": "arc", "radius2": 165, "radius": 215},
+        "encoding": {
+          "theta": {
+            "field": "No_of_Internet_Plans",
+            "type": "quantitative",
+            "stack": true,
+            "aggregate": "sum"
+          },
+        "detail": {
+          "field": "Country"
+        },
+          "color": {
+            "field": "Continental_region",
+            "type": "nominal",
+            "scale": {"range": [
+              "#a8e8f9",
+              "#219ebc",
+              "#013c58",
+              "#ffb703",
+              "#fb8500",
+              "#640101"]}
+          },
+          
+          "stroke": {
+            "condition": [{
+                "param": "highlight",
+                "empty": false,
+                "value": "black"
+                }],
+                "value": "white"
+          },
+
+          "strokeWidth": {
+            "condition": [{
+            "param": "highlight",
+            "empty": false,
+            "value": 2.0
+            }],
+            "value": 0.5
+
+          },    
+
+          "opacity":{
+            "condition": [
+            {
+              "param": "highlight",
+              "value": 0.8
+            }],
+            "value": 0.5
+          },
+
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"},
+            {"field": "Continental_region", "type": "nominal", "title": "Continent"},
+            {"field": "PercentOfTotal", "type": "quantitative", "title": "Percentage Number of Internet Plans", "format": ".2%"},
+            {"field": "No_of_Internet_Plans", "type": "quantitative", "title": "Number of Internet Plans"}
           ]
         }
       },
