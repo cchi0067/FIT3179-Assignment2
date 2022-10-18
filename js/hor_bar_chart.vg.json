@@ -69,7 +69,7 @@
     ],
     "hconcat": [
       {
-        "width": 700,
+        "width": 680,
         "height": 600,
         "params": [{
             "name": "hover",
