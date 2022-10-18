@@ -176,7 +176,7 @@
         },
         "encoding": {
           "text": {"value": "Malaysia"},
-          "color": {"value": "black"}
+          "color": {"value": "red"}
         }
       },
       {
@@ -191,7 +191,7 @@
         },
         "encoding": {
           "text": {"value": "Australia"},
-          "color": {"value": "black"}
+          "color": {"value": "red"}
         }
       },
       {
@@ -206,7 +206,7 @@
         },
         "encoding": {
           "text": {"value": "United States"},
-          "color": {"value": "black"}
+          "color": {"value": "red"}
         }
       },
       {
@@ -221,7 +221,7 @@
         },
         "encoding": {
           "text": {"value": "China"},
-          "color": {"value": "black"}
+          "color": {"value": "red"}
         }
       }
       
