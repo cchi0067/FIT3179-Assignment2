@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "An interactive horizontal bar chart for showing the top 30 of countries with the highest Internet price in the world in 2022. Countries can be filtered by continent and brushing interaction is included.",
     "config": {
         "view": {
           "stroke": "transparent"
