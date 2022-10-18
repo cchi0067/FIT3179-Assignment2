@@ -74,7 +74,7 @@
         "legend": {
           "title": "Continent",
           "orient": "right",
-          "offset": 100,
+          "offset": 80,
           "labelOffset": 3,
           "labelFontSize": 12,
           "titleFontSize":14,
