@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "An interactive bar chart for showing the top 10 of countries with the fastest Internet speed in the world in 2022. Countries can be filtered by continent.",
     "config": {
         "view": {
           "stroke": "transparent"
