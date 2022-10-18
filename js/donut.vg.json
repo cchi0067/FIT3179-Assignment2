@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A double-layered donut chart for displaying the proportion of internet plans by continent and country in 2022.",
+    "description": "A donut chart for displaying the proportion of internet plans by continent and country in 2022.",
     "config": {
         "axis": {"labelFont": "monospace", "titleFont": "monospace", "titleColor": "#f2f0f7", "labelColor": "#f2f0f7"},
         "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif", "titleColor": "black", "labelColor": "black"},
