@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A choropleth map for displaying the density of Internet users in each country around the world in 2022.",
     "config": {
       "view": {
         "stroke": "transparent"
