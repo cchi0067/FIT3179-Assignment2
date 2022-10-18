@@ -194,14 +194,6 @@
           "title": "Average Internet Speed (Megabits per Second)",
           "field": "Avg_Speed(Mbit/s)",
           "type": "quantitative"
-        },
-        "opacity":{
-          "condition": [
-          {
-            "param": "hover",
-            "value": 1
-          }],
-          "value": 0.2
         }
       }
     },
