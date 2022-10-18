@@ -12,7 +12,7 @@
       },
         "padding": {"left": 20, "top": 20, "right": 20, "bottom": 20},
     
-        "width": 475,
+        "width": 380,
         "height": 380,
         "background": null,
     "data": {
@@ -109,7 +109,7 @@
                 "legend": {
                   "title": "Continent",
                   "orient": "right",
-                  "offset": 10,
+                  "offset": 30,
                   "labelOffset": 3,
                   "labelFontSize": 12,
                   "titleFontSize":14,
@@ -234,7 +234,7 @@
           "type": "text",
           "align": "left",
           "baseline": "middle",
-          "dx": 130,
+          "dx": 80,
           "dy": -45,
           "fontSize": 12,
           "fontStyle": "italic"
@@ -249,7 +249,7 @@
           "type": "text",
           "align": "left",
           "baseline": "middle",
-          "dx": 130,
+          "dx": 80,
           "dy": -30,
           "fontSize": 12,
           "fontStyle": "italic"
@@ -264,7 +264,7 @@
           "type": "text",
           "align": "left",
           "baseline": "middle",
-          "dx": 180,
+          "dx": 140,
           "dy": -180,
           "fontSize": 12,
           "fontStyle": "italic"
@@ -279,7 +279,7 @@
           "type": "text",
           "align": "left",
           "baseline": "middle",
-          "dx": 180,
+          "dx": 140,
           "dy": -165,
           "fontSize": 12,
           "fontStyle": "italic"
@@ -294,7 +294,7 @@
           "type": "text",
           "align": "left",
           "baseline": "middle",
-          "dx": 180,
+          "dx": 140,
           "dy": -150,
           "fontSize": 12,
           "fontStyle": "italic"
@@ -309,7 +309,7 @@
           "type": "text",
           "align": "left",
           "baseline": "middle",
-          "dx": 180,
+          "dx": 140,
           "dy": -135,
           "fontSize": 12,
           "fontStyle": "italic"
