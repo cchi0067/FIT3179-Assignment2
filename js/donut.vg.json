@@ -87,7 +87,15 @@
               "#ffb703",
               "#fb8500",
               "#640101"]},
-              "legend": null
+              "legend": {
+                "title": "Continent",
+                "orient": "right",
+                "offset": 0,
+                "labelOffset": 3,
+                "labelFontSize": 12,
+                "titleFontSize":14,
+                "titlePadding": 5
+              }
           },
           
           "stroke": {
