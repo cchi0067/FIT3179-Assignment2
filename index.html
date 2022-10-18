@@ -24,8 +24,8 @@ body {font-family: "Lato", sans-serif; font-size: 18px;}
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="#intro" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INTRODUCTION</a>
-    <a href="#user-count" class="w3-bar-item w3-button w3-padding-large w3-hide-small">USER COUNT</a>
-    <a href="#percentage" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PERCENTAGE</a>
+    <a href="#user-count" class="w3-bar-item w3-button w3-padding-large w3-hide-small">USERS</a>
+    <a href="#percentage" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PLANS</a>
     <a href="#speed" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SPEED</a>
     <a href="#price" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRICE</a>
   </div>
@@ -34,8 +34,8 @@ body {font-family: "Lato", sans-serif; font-size: 18px;}
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="#intro" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INTRODUCTION</a>
-  <a href="#user-count" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">USER COUNT</a>
-  <a href="#percentage" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PERCENTAGE</a>
+  <a href="#user-count" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">USERS</a>
+  <a href="#percentage" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PLANS</a>
   <a href="#speed" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SPEED</a>
   <a href="#price" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRICE</a>
 </div>
@@ -87,41 +87,46 @@ body {font-family: "Lato", sans-serif; font-size: 18px;}
       <div class="w3-row-padding w3-padding-32 w3-center" style="margin:0px;">
           <div class="w3-container w3-white" id="vis1" style="padding: 8px; padding-bottom: 30px; width: 100%"></div>
       </div>
+    
+      <div class="w3-row-padding w3-content w3-padding-32 w3-center" style="margin:0px;">
+        <div class="w3-half" >
+          <h2 class="w3-wide w3-center w3-justify">PERCENTAGE BY CONTINENT OF INTERNET USERS IN 2022</h2>
+
+          <p class="w3-opacity w3-center"><i>The global makeup of Internet users by continent.</i></p>
+
+          <p class="w3-justify">
+            When taking a look at Internet user makeup of each continent globally, <span style="font-weight:900;">Asia</span> actually contributes the highest percentage to the total number of global Internet users which is 
+            <span style="font-weight:900;">64%</span>. <span style="font-weight:900;">Europe and North America</span> then contribute the same percentage value of <span style="font-weight:900;">10%
+            </span>to the number of global Internet users. The continent which contributes the smallest percentage turns out to be <span style="font-weight:900;">Oceania</span> accomodating to only <span style="font-weight:900;">1%</span>
+            of the world's Internet users.
+          </p>
+        </div>
+
+        <div class="w3-half" style="padding-left: 32px;">
+          <div class="w3-container w3-white" id="vis2" style="padding:0px"></div>
+        </div>
+
+      </div>
     </div>
   </div>
 
   <!-- The Percentage Section -->
   <div class="w3-container w3-center w3-content w3-padding-64" style="max-width:80%" id="percentage">
-    <h2 class="w3-wide">PERCENTAGE IN 2022 OF</h2>
-    <div class="w3-half" style="padding-right: 40px">
-      <h3 class="w3-wide w3-center">INTERNET USERS</h2>
+    <h2 class="w3-wide">PERCENTAGE OF INTERNET PLANS IN 2022</h2>
 
-      <p class="w3-opacity w3-center"><i>The global makeup of Internet users by continent.</i></p>
-
-      <p class="w3-justify">
-        When taking a look at Internet user makeup of each continent globally, <span style="font-weight:900;">Asia</span> actually contributes the highest percentage to the total number of global Internet users which is 
-        <span style="font-weight:900;">64%</span>. <span style="font-weight:900;">Europe and North America</span> then contribute the same percentage value of <span style="font-weight:900;">10%
-        </span>to the number of global Internet users. The continent which contributes the smallest percentage turns out to be <span style="font-weight:900;">Oceania</span> accomodating to only <span style="font-weight:900;">1%</span>
-        of the world's Internet users.
-      </p>
-
-        <div class="w3-container w3-white w3-center" id="vis2" ></div>
-    </div>
-
-    <div class="w3-half" style="padding-left: 40px">
-      <h3 class="w3-wide w3-center">INTERNET PLANS</h2>
-
-      <p class="w3-opacity w3-center"><i>The percentage of Internet plans by country and continent.</i></p>
+      <p class="w3-opacity w3-center"><i>The percentage of Internet plans available by continent.</i></p>
 
       <p class="w3-justify">
         <span style="font-weight:900;">Asia</span> also takes the lead with the highest number of Internet plans among all continents which is <span style="font-weight:900;">1781</span>, making up <span style="font-weight:900;">29%</span>
        of the global number of Internet plans. <span style="font-weight:900;">Africa</span> then follows up with <span style="font-weight:900;">24%</span> of the global number of Internet plans and <span style="font-weight:900;">Europe</span> with 
-       <span style="font-weight:900;">21%</span>. Consistent with the Internet user percentage, the continent with the least number of Internet plans turns out to be <span style="font-weight:900;">Oceania</span> contributing <span style="font-weight:900;">6%</span>
+       <span style="font-weight:900;">21%</span>. Consistent with the Internet user percentage, the continent with the least number of Internet is <span style="font-weight:900;">Oceania</span> contributing <span style="font-weight:900;">6%</span>
        to the global number.
       </p>
 
-        <div class="w3-container w3-white w3-center" id="vis3" ></div>
+      <div class="w3-row-padding w3-center" style="margin:0px;">
+        <div class="w3-container w3-white" id="vis3" style="padding: 8px; padding-bottom: 30px; left: 5%"></div>
     </div>
+
   </div>
 
   <!-- Countries with Fastest Internet Speed-->
@@ -152,7 +157,7 @@ body {font-family: "Lato", sans-serif; font-size: 18px;}
 
       <p class="w3-justify">
         As with many things in life, the Internet comes with a price. In this visualisation, we take a look at the countries with the highest Internet price in terms of
-        US dollars. The country with the highest Internet price is <span style="font-weight:900;">Equatorial Guinea</span> with a price of 
+        US dollars. It can be seen that the country with the highest Internet price is <span style="font-weight:900;">Equatorial Guinea</span> with a price of 
         <span style="font-weight:900;">$49.67</span>. Another interesting observation is <span style="font-weight:900;">half of the countries</span> that 
         made it into the top 10 countries with the highest Internet price are from the continent of <span style="font-weight:900;">Africa</span>.
       </p>
@@ -161,7 +166,7 @@ body {font-family: "Lato", sans-serif; font-size: 18px;}
           <div class="w3-container w3-white" id="vis5" style="padding: 8px; padding-bottom: 30px; right: 25px"></div>
       </div>
 
-      <div class="w3-row-padding w3-padding-32 w3-center" style="margin:0px;">
+      <div class="w3-row-padding w3-content w3-padding-32 w3-center" style="margin:0px;">
         <div class="w3-half" >
           <h3 class="w3-wide w3-center">AVERAGE INTERNET SPEED AGAINST PRICE</h2>
     
@@ -176,8 +181,8 @@ body {font-family: "Lato", sans-serif; font-size: 18px;}
 
         </div>
 
-        <div class="w3-half" >
-          <div class="w3-container w3-white" id="vis6" style="padding: 8px; padding-bottom: 30px; "></div>
+        <div class="w3-half" style="padding-left: 12px;">
+          <div class="w3-container w3-white" id="vis6" style="padding: 8px; padding-bottom: 30px;"></div>
         </div>
       </div>
 
