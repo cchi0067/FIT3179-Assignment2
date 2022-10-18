@@ -12,8 +12,8 @@
       },
         "padding": {"left": 20, "top": 20, "right": 20, "bottom": 20},
     
-        "width": 500,
-        "height": 400,
+        "width": 475,
+        "height": 380,
         "background": null,
     "data": {
       "url": "https://raw.githubusercontent.com/cchi0067/FIT3179-Assignment2/main/data/world_internet_data.csv"
@@ -265,7 +265,7 @@
           "align": "left",
           "baseline": "middle",
           "dx": 180,
-          "dy": -190,
+          "dy": -180,
           "fontSize": 12,
           "fontStyle": "italic"
         },
@@ -280,7 +280,7 @@
           "align": "left",
           "baseline": "middle",
           "dx": 180,
-          "dy": -175,
+          "dy": -165,
           "fontSize": 12,
           "fontStyle": "italic"
         },
@@ -295,7 +295,7 @@
           "align": "left",
           "baseline": "middle",
           "dx": 180,
-          "dy": -160,
+          "dy": -150,
           "fontSize": 12,
           "fontStyle": "italic"
         },
@@ -310,7 +310,7 @@
           "align": "left",
           "baseline": "middle",
           "dx": 180,
-          "dy": -145,
+          "dy": -135,
           "fontSize": 12,
           "fontStyle": "italic"
         },
